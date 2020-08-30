@@ -1,0 +1,2 @@
+// https://www.codewars.com/kata/520446778469526ec0000001
+Array.prototype.sameStructureAs=function(o){return Array.isArray(o)&&(r=n=>n.map(v=>Array.isArray(v)?r(v):""),s=a=>JSON.stringify(r(a)))&&s(this)==s(o)}
